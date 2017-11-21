@@ -8,7 +8,7 @@ Basic abstraction with Laravel integration for Authorize.net
  
 ### Installation
 
-- `composer require pseudocody/authorizenet`
+- `composer require codylewis/authorizenet`
 - For Laravel 5 support:
     - Add the service provider to `config/app.php`: `Codylewis\AuthorizeNet\AuthorizeNetServiceProvider`
     - Register the facade: `'AuthorizeNet' => Codylewis\AuthorizeNet\AuthorizeNetFacade::class,`
