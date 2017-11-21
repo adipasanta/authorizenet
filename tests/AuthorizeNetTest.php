@@ -1,6 +1,6 @@
 <?php
 
-use Pseudocody\AuthorizeNet\AuthorizeNetApi;
+use Codylewis\AuthorizeNet\AuthorizeNetApi;
 
 class AuthorizeNetTest extends PHPUnit\Framework\TestCase
 {
@@ -13,7 +13,7 @@ class AuthorizeNetTest extends PHPUnit\Framework\TestCase
     public function setUp()
     {
         $this->api = $this->getMockBuilder(AuthorizeNetApi::class);
-        $this->authorizeNet = new Pseudocody\AuthorizeNet\AuthorizeNet(self::MERCHANT_LOGIN_ID, self::MERCHANT_TRANSACTION_KEY);
+        $this->authorizeNet = new Codylewis\AuthorizeNet\AuthorizeNet(self::MERCHANT_LOGIN_ID, self::MERCHANT_TRANSACTION_KEY);
     }
 
     public function testTransaction()
@@ -32,7 +32,7 @@ class AuthorizeNetTest extends PHPUnit\Framework\TestCase
             ]
         ];
 
-        $response = $this->authorizeNet->authorizeCreditCard($order);
+        $response = $this->authorizeNet->authorizeCreditCard($order, true);
         $response = $response->getTransactionResponse();
 
         $this->assertSame((int)$response->getResponseCode(), 1);

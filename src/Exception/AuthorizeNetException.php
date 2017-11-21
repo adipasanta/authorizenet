@@ -1,4 +1,4 @@
-<?php namespace Pseudocody\AuthorizeNet\Exception;
+<?php namespace Codylewis\AuthorizeNet\Exception;
 
 class AuthorizeNetException extends \Exception
 {

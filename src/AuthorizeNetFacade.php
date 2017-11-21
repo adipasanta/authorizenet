@@ -1,6 +1,6 @@
 <?php
 
-namespace Pseudocody\AuthorizeNet;
+namespace Codylewis\AuthorizeNet;
 
 use Illuminate\Support\Facades\Facade;
 

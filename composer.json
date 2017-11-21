@@ -1,5 +1,5 @@
 {
-  "name": "pseudocody/authorizenet",
+  "name": "codylewis/authorizenet",
   "description": "Authorize.net API wrapper, includes Laravel 5 support.",
   "keywords": [
     "laravel",
@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Pseudocody\\AuthorizeNet\\": "src/"
+      "Codylewis\\AuthorizeNet\\": "src/"
     }
   },
   "require-dev": {

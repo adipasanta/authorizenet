@@ -1,9 +1,9 @@
 <?php
 
-namespace Pseudocody\AuthorizeNet;
+namespace Codylewis\AuthorizeNet;
 
-use Pseudocody\AuthorizeNet\AuthorizeNetApi;
-use Pseudocody\AuthorizeNet\Exception\AuthorizeNetException;
+use Codylewis\AuthorizeNet\AuthorizeNetApi;
+use Codylewis\AuthorizeNet\Exception\AuthorizeNetException;
 
 class AuthorizeNet
 {

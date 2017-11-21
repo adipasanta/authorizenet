@@ -1,6 +1,6 @@
 <?php
 
-namespace Pseudocody\AuthorizeNet;
+namespace Codylewis\AuthorizeNet;
 
 use net\authorize\api\constants\ANetEnvironment;
 use net\authorize\api\contract\v1 as AnetAPI;
@@ -59,6 +59,7 @@ class AuthorizeNetApi
         $paymentOne->setCreditCard($creditCard);
         // Create order information
         $orderType = new AnetAPI\OrderType();
+        $orderType->setInvoiceNumber($order['invoice_number'] ?? '');
         $orderType->setDescription($order['description'] ?? '');
         // Set the customer's Bill To address
         $customerAddress = new AnetAPI\CustomerAddressType();
