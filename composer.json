@@ -1,5 +1,5 @@
 {
-  "name": "adipasanta/authorizenet",
+  "name": "adipasanta/authorizenet_fork",
   "description": "Authorize.net API wrapper, includes Laravel 5 support.",
   "keywords": [
     "laravel",
