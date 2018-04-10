@@ -1,5 +1,5 @@
 {
-  "name": "codylewis/authorizenet",
+  "name": "adipasanta/authorizenet",
   "description": "Authorize.net API wrapper, includes Laravel 5 support.",
   "keywords": [
     "laravel",
